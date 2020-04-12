@@ -7,6 +7,11 @@ const app = express();
 // PORT = for Heroku || for localhost
 let PORT = process.env.PORT || 3000;
 
+// Configure app to handle JSON in the
+// request body when using POST
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
+
 // PLUS the following
 app.use(express.static("public"));
 /*
