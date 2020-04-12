@@ -2,6 +2,11 @@
 const express = require("express");
 const path = require("path");
 
+// Instantiate app and set port number
+const app = express();
+// PORT = for Heroku || for localhost
+let PORT = process.env.PORT || 3000;
+
 // PLUS the following
 app.use(express.static("public"));
 /*
