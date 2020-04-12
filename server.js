@@ -12,6 +12,10 @@ let PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
+// Require routes
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
+
 // PLUS the following
 app.use(express.static("public"));
 /*
