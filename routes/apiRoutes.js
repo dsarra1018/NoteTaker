@@ -1,13 +1,19 @@
 const router = require("express").Router();
 const db = require("../db/db.json");
+const store = require("../js/store");
 
 router.get("/notes", function(request, response) {
-    // get a note
-    // see 15-HotRestaurant/Solved for more info
     response.send(db);
 })
 
-// other apis here
+router.post("/notes", function(request, response) {
+    db.push(store(request.body));
+    response.json(true);
+})
+
+router.delete("/notes/:id", function(request, response) {
+
+})
 
 // /api/notes/:id
 
