@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 100px;
     margin: 0;
     padding: 0;
 }
@@ -20,12 +20,6 @@ html, body {
     width: 100%;
     outline: none;
     border: none;
-}
-
-.note-textarea {
-    resize: none;
-    height: calc(100% - 63px);
-    padding-top: 15px;
 }
 
 .note-title {
