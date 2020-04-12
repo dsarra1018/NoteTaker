@@ -1,6 +1,6 @@
-// basic server template
-// see 14-FinalStarWarsApp/server-template.js
-// plus require routes
+// Declare dependencies
+const express = require("express");
+const path = require("path");
 
 // PLUS the following
 app.use(express.static("public"));
