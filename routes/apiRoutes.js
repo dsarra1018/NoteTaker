@@ -17,7 +17,7 @@ router.post("/notes", function(request, response) {
 
 // Deleting notes
 // /api/notes/:id
-router.delete("note/:id", function(request, response) {
+router.delete("notes/:id", function(request, response) {
     db = db.filter(elem => elem.id != request.params.id);
     response.json(true);
 })
